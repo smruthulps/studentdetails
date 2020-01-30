@@ -1,0 +1,20 @@
+
+<mat-accordion multi=true *ngIf="postList.length >0">
+    <mat-expansion-panel *ngFor="let post of postList">
+        <mat-expansion-panel-header>
+               {{post.name}}
+        </mat-expansion-panel-header>
+        <span>age:{{post.age}}</span>
+        <hr>
+        <span>class:{{post.class}}</span>
+        <hr>
+        <span>division:{{post.division}}</span>
+        <hr>
+        <span>school:{{post.school}}</span>
+        <hr>
+        <span>address:{{post.address}}</span>
+         <mat-action-row>
+    
+  </mat-action-row>
+    </mat-expansion-panel>
+</mat-accordion>

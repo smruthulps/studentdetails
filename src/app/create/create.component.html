@@ -1,0 +1,14 @@
+<mat-card>
+<table>
+    <tr><td>name</td><td><input [(ngModel)]="studentDetails.name"></td></tr>
+    <tr><td>age</td><td><input [(ngModel)]="studentDetails.age"></td></tr>
+    <tr><td>class</td><td><input [(ngModel)]="studentDetails.class"></td></tr>
+    <tr><td>division</td><td><input [(ngModel)]="studentDetails.division"></td></tr>
+    <tr><td>school</td><td><input [(ngModel)]="studentDetails.school"></td></tr>
+    <tr><td>address</td><td><textarea [(ngModel)]="studentDetails.address" ></textarea></td></tr>
+</table>
+<button 
+ mat-raised-button color="primary" 
+(click)="newRecord()"
+>save details</button>
+</mat-card>
